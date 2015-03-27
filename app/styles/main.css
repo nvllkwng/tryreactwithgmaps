@@ -15,6 +15,20 @@ body {
   width: 700px;
   height: 400px;
 }
+.address-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.address-list li button {
+  color: black;
+  font-size: 1.2em;
+}
+.address-list li {
+  padding: 3px 5px;
+  background: #dcdcdc;
+}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,

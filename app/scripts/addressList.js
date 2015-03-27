@@ -11,10 +11,10 @@ var app = app || {};
         onClickAddress: function(e) {
             this.props.onClickAddress(e.currentTarget.innerText);
         },
-        
+
         render: function() {
             return (
-                <ul>
+                <ul className="address-list">
                 {this.props.addresses.map(function(address) {
                     return <li>
                         <button
@@ -24,7 +24,7 @@ var app = app || {};
                         <button
                             data-address={address}
                             onClick={this.onClickRemove}
-                            className="btn-link">x</button>
+                            className="btn-link pull-right">x</button>
                             </li>;
                 }.bind(this))}
                 </ul>

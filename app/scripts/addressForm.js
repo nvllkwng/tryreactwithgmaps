@@ -26,7 +26,10 @@ var app = app || {};
                     placeholder="enter address"
                     type="text"
                     className="form-control address-form"/>
-                <button className="btn btn-default" type="submit">Add</button>
+                {(this.props.showAddBtn)? 
+                    <button className="btn btn-default" type="submit">Add</button> :
+                    ''
+                }                
                 </div>
                 </form>
             );
