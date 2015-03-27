@@ -14,20 +14,23 @@ var app = app || {};
 
         render: function() {
             return (
-                <ul className="address-list">
-                {this.props.addresses.map(function(address) {
-                    return <li>
-                        <button
-                            onClick={this.onClickAddress}
-                            className="btn-link">{address}
-                            </button>
-                        <button
-                            data-address={address}
-                            onClick={this.onClickRemove}
-                            className="btn-link pull-right">x</button>
-                            </li>;
-                }.bind(this))}
-                </ul>
+                <div>
+                    {(this.props.loading)? 'loading...' : ''}
+                    <ul className="address-list">
+                    {this.props.addresses.map(function(address) {
+                        return <li className={(this.props.activeAddress === address)? 'active' : ''}>
+                            <button
+                                onClick={this.onClickAddress}
+                                className="btn-link">{address}
+                                </button>
+                            <button
+                                data-address={address}
+                                onClick={this.onClickRemove}
+                                className="btn-link pull-right">x</button>
+                                </li>;
+                    }.bind(this))}
+                    </ul>
+                </div>
             );
         }
     });

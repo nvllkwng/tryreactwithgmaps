@@ -21,13 +21,21 @@ body {
   margin: 0;
   width: 100%;
 }
+.address-list li.active {
+  background: #1187f9;
+}
 .address-list li button {
-  color: black;
+  color: #fff;
   font-size: 1.2em;
+
+}
+.address-list li button:hover {
+  color: #dfdfdf;
+  text-decoration: none;
 }
 .address-list li {
   padding: 3px 5px;
-  background: #dcdcdc;
+  background: #878787;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
