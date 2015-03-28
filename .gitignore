@@ -2,3 +2,7 @@ node_modules
 .tmp
 .DS_Store
 bower_components
+build
+dist
+jspm_packages
+doc
