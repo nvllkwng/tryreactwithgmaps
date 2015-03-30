@@ -1,6 +1,12 @@
 <template>
-  <section>
-    <h2>${heading}</h2>
-    <div class="google-map" ref="map"></div>
-  </section>
+  <import from="./addressForm" as="address-form"></import>
+  <import from="./addressList"></import>
+  <div class="container">
+    <section>
+      <h2>${heading}</h2>
+      <address-form></address-form>
+      <div class="google-map" ref="map"></div>
+      <address-list addresses.bind="addresses"></address-list>
+    </section>
+  </div>
 </template>

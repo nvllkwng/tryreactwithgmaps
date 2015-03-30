@@ -1,0 +1,8 @@
+<template>
+    <ul class="address-list">
+        <li class="address-item ${$parent.activeAddress===address? 'active' : ''}" repeat.for="address of addresses.list()">
+            <button class="btn btn-link" click.delegate="$parent.onClickAddress(address)">${address}</button>
+            <button class="btn btn-link pull-right" click.delegate="$parent.removeAddress(address)">x</button>
+        </li>
+    </ul>
+</template>

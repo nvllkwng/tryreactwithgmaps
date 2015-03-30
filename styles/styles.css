@@ -1,5 +1,19 @@
+.address-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.address-item {
+    background: #9f9f9f;
+}
+.address-item .btn-link {
+    color: #fff;
+}
+.address-item.active {
+    background: #1081ff;
+}
 .google-map {
-    width: 700px;
+    width: 100%;
     height: 400px;
 }
 .splash {
